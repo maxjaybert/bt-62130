@@ -1,0 +1,26 @@
+.card {
+  outline: none; /* como el borde pero no ocupa espacio en la caja */
+  width: 220px;
+  max-width: 300px;
+  height: 400px;
+  overflow: hidden; /* si el contenido ocupa mas espacio que el tamaño del contenedor queda oculto */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: orange;
+}
+
+.card__image-container {
+  height: 200px;
+  background-color: blue;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%; /* la imagen se ajusta al elemento padre/contenedor, es decir, "image-conteiner". por ende tendra 200px (definidos arriba) */
+  object-fit: cover;
+}
+
+.card__content {
+  padding: 1em;
+}
