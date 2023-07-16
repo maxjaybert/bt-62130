@@ -1,0 +1,11 @@
+.section-cards {
+  background-color: wheat;
+  padding: 1em;
+}
+
+.cards-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10em;
+  justify-content: center;
+}
