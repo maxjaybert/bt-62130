@@ -3,10 +3,24 @@
 .main-header {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    & {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 #menu {
   display: none;
+
+  &:checked + .nav-bar {
+    display: block;
+  }
+
+  &:checked ~ .search-bar .menu-toggle__label {
+    background-color: yellow;
+  }
 }
 
 /* --------- NAVBAR --------- */
@@ -18,7 +32,15 @@
     display: flex;
     list-style-type: none;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      & {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
   }
+
   &__nav-item {
     text-align: center;
     background-color: pink;
@@ -29,6 +51,12 @@
     color: wheat;
     padding: 1em 2em;
     text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      display: none;
+    }
   }
 }
 
@@ -76,3 +104,46 @@
 }
 
 /* --------- MENU TOOGLE --------- */
+
+.menu-toggle {
+  display: none;
+  background-color: black;
+  flex: 0 0 3em;
+  position: relative;
+
+  &__label {
+    display: block;
+    background-color: #333;
+    height: 100%;
+  }
+  &__top-bread,
+  &__meat,
+  &__bottom-bread {
+    display: block;
+    background-color: #333;
+    height: 0.2em;
+    position: absolute;
+    right: 0.5em;
+    left: 0.5em;
+    cursor: pointer;
+  }
+
+  &__top-bread {
+    top: 0.8em;
+  }
+
+  &__meat {
+    top: 50%;
+    margin-top: -0.1em; /* lo centro */
+  }
+
+  &__bottom-bread {
+    bottom: 0.8em;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      display: block;
+    }
+  }
+}
