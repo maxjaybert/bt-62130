@@ -1,5 +1,10 @@
+@import '../base/colors';
+
+
+
+
 .section-cards {
-  background-color: wheat;
+  background-color: $color_navbar;
   padding: 1em;
 }
 
@@ -9,3 +14,4 @@
   gap: 1em;
   justify-content: center;
 }
+

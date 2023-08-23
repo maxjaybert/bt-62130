@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Proyecto Integrador - Contacto</title>
 </head>
 
@@ -16,26 +17,165 @@
         <nav class="nav-bar"> <!-- nav-bar -->
             <ul class="nav-bar__nav-list">
                 <li class="nav-bar__nav.item">
-                    <a href="" class="nav-bar__nav-link">Inicio</a>
+                    <a href="../index.html" class="nav-bar__nav-link">Inicio</a>
                 </li>
                 <li class="nav-bar__nav.item">
                     <a href="" class="nav-bar__nav-link">Alta</a>
                 </li>
                 <li class="nav-bar__nav.item">
-                    <a href="" class="nav-bar__nav-link">Contacto</a>
+                    <a href="./contacto.html" class="nav-bar__nav-link">Contacto</a>
                 </li>
                 <li class="nav-bar__nav.item">
-                    <a href="" class="nav-bar__nav-link">Nosotros</a>
+                    <a href="./nosotros.html" class="nav-bar__nav-link">Nosotros</a>
                 </li>
             </ul>
         </nav> <!-- nav-bar -->
 
+        <div class="search-bar"> <!-- search-bar -->
+            <div class="search-bar__logo-container"><i class="fa-solid fa-truck-fast fa-2xl"></i></div>
+            <form action="" class="search-bar__form-container">
+                <label for="busqueda" class="search-bar__form-label">Buscar</label>
+                <input type="search" class="search-bar__form-search" id="busqueda" placeholder="Ingrese producto...">
+                <input type="submit" value="Buscar" class="search-bar__form-submit">
+            </form>
+
+            <div class="search-bar__carrito-container"><i class="fa-solid fa-cart-shopping fa-2xl"></i></div>
+
+            <div class="menu-toggle">
+                <label for="menu" class="menu-toogle__label">
+                    <span class="menu-toggle__top-bread"></span>
+                    <span class="menu-toggle__meat"></span>
+                    <span class="menu-toggle__bottom-bread"></span>
+                </label>
+            </div>
+
+        </div>
 
     </header>
 
 
+    <form action="" method="post" class="formulario">
+        <fieldset>
+            <label for="nombre">Nombre:*</label><br>
+            <input type="text" class="medida-campos" id="nombre" required><br>
 
-    <script type="module" src="/main.js"></script>
+            <div class="separador"></div>
+
+            <label for="apellido">Apellido:*</label><br>
+            <input type="text" class="medida-campos" id="apellido" required><br>
+
+            <div class="separador"></div>
+
+            <label for="nacionalidad">Motivo:*</label><br>
+            <select name="paises" class="medida-campos" id="nacionalidad" required><!--  -->
+                <option value="" disabled selected>- Seleccionar -</option>
+                <option value="Consulta">Consulta</option>
+                <option value="Reclamos">Reclamos</option>
+                <option value="Garantia">Garantia</option>
+                <option value="Soporte-tecnico">Soporte Técnico</option>
+                <option value="Presupuesto">Presupuesto</option>
+                <option value="Otros">Otros</option>
+            </select><br>
+
+            <div class="separador"></div>
+
+            <label for="tel">Teléfono</label><br>
+            <input type="number" name="tel" class="medida-campos" id="tel" placeholder="Código de área y número"><br>
+
+            <div class="separador"></div>
+
+            <label for="mail">Direccion de correo electrónico:*</label><br>
+            <input type="email" name="mail" class="medida-campos" id="mail" placeholder="Ej: mail@gmail.com" required>
+
+            <div class="separador"></div>
+
+            <label for="garantia">Garantia*:</label><br>
+
+            <input type="radio" id="positivo" value="si" name="opciones" required>
+            <label for="positivo">Si</label>
+
+
+            <input type="radio" id="negativo" value="no" name="opciones" required>
+            <label for="negativo">No</label>
+
+            <br>
+
+            <div class="separador"></div>
+
+            <label for="producto">Producto:*</label><br>
+            <input type="text" name="producto" class="medida-campos" id="producto" placeholder="Ej: Macbook Air"
+                required>
+
+
+            <div class="separador"></div>
+
+            <label for="comentarios">Observaciones: </label><br>
+            <textarea cols="30" rows="10" class="medida-campos-text"></textarea><br><!--  -->
+
+
+            <div class="separador"></div>
+
+
+
+            <div id="last-checks">
+                <input type="checkbox" id="condiciones" name="condiciones" required>
+                <label for="condiciones" class="terminos-novedades">Acepto las condiciones*</label><br>
+
+                <input type="checkbox" id="novedades" name="novedades" checked>
+                <label for="novedades" class="terminos-novedades">Deseo recibir novedades</label>
+                <br>
+
+            </div>
+            <br>
+            <br>
+            <div id="botones">
+                <button type="submit">Enviar</button>
+                <button type="reset">Restablecer</button><br>
+            </div>
+            <br>
+            <p class="campo-obligatorio">*:campo obligatorio</p>
+        </fieldset>
+
+        <div class="chat"><i class="fa-solid fa-circle-user fa-2xl"></i></div>
+
+
+        <footer class="footer">
+
+            <div class="footer__container">
+                <div class="footer__logo-container">
+                    <h3>Excellence Import</h3><i class="fa-solid fa-truck-fast fa-2xl"></i>
+                </div>
+                <div class="footer__column">
+                    <h3>Acerca de Excellence Import</h3>
+                    <ul>
+                        <li>Sobre Nosotros</li>
+                        <li>¿Quienes Somos?</li>
+                        <li>¿Cuanto demora la entrega?</li>
+                        <li>Quienes nos eligen</li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3>Contactenos</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Dirección</li>
+                        <li><i class="fa-solid fa-phone"></i> Telefono</li>
+                        <li><i class="fa-regular fa-clock"></i> Nuestro Horarios</li>
+                        <li><i class="fa-solid fa-users"></i> Atención al Público</li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3>Nuestras Redes</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-twitter fa-xl"></i> /twitter</li>
+                        <li><i class="fa-brands fa-instagram fa-xl"></i> /instagram</li>
+                        <li><i class="fa-brands fa-tiktok fa-xl"></i> /tiktok</li>
+                        <li><i class="fa-brands fa-discord fa-xl"></i> /discord</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="/main.js"></script>
 </body>
 
 

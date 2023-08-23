@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Proyecto Integrador</title>
 </head>
 
@@ -16,29 +18,29 @@
     <nav class="nav-bar"> <!-- nav-bar -->
       <ul class="nav-bar__nav-list">
         <li class="nav-bar__nav.item">
-          <a href="" class="nav-bar__nav-link">Inicio</a>
+          <a href="../index.html" class="nav-bar__nav-link">Inicio</a>
         </li>
         <li class="nav-bar__nav.item">
           <a href="" class="nav-bar__nav-link">Alta</a>
         </li>
         <li class="nav-bar__nav.item">
-          <a href="" class="nav-bar__nav-link">Contacto</a>
+          <a href="./views/contacto.html" class="nav-bar__nav-link">Contacto</a>
         </li>
         <li class="nav-bar__nav.item">
-          <a href="" class="nav-bar__nav-link">Nosotros</a>
+          <a href="./nosotros.html" class="nav-bar__nav-link">Nosotros</a>
         </li>
       </ul>
     </nav> <!-- nav-bar -->
 
     <div class="search-bar"> <!-- search-bar -->
-      <div class="search-bar__logo-container">Logo</div>
+      <div class="search-bar__logo-container"><i class="fa-solid fa-truck-fast fa-2xl"></i></div>
       <form action="" class="search-bar__form-container">
         <label for="busqueda" class="search-bar__form-label">Buscar</label>
-        <input type="search" class="search-bar__form-search" id="busqueda">
+        <input type="search" class="search-bar__form-search" id="busqueda" placeholder="Ingrese producto...">
         <input type="submit" value="Buscar" class="search-bar__form-submit">
       </form>
 
-      <div class="search-bar__carrito-container">C</div>
+      <div class="search-bar__carrito-container"><i class="fa-solid fa-cart-shopping fa-2xl"></i></div>
 
       <div class="menu-toggle">
         <label for="menu" class="menu-toogle__label">
@@ -48,15 +50,19 @@
         </label>
       </div>
 
-    </div> <!-- search-bar -->
+    </div>
 
   </header>
 
   <main>
     <section class="section-cards"> <!-- section-cards -->
       <header class="section-cards__header">
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>Se encotnraron x productos</p>
+        <h1>SEMANA DE DESCUENTOS</h1>
+        <p class="texto-1">Hasta un 50% OFF en nuestros productos seleccionados.</p>
+        <br>
+        <p class="texto-2">Solo valido del 1/9 al 15/9 o hasta agotar stock.
+          <br>Ver promociones bancarias.
+        </p>
       </header>
 
       <div class="cards-conteiner"> <!-- cards-conteiner -->
@@ -64,14 +70,12 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/apple-iphone-11-pro-max.jpg" alt="Iphone 11 pro max" class="card__image">
+              <img src="/public/img/airpods-3.webp" alt="Airpods 3" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Celular</h2>
+              <h2 class="card__heading">Airpods 3ra Gen</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>Incluye cargador cable USB C y una funda de regalo a eleccion</p>
               </div>
             </div>
           </article>
@@ -80,14 +84,12 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/apple-iphone-12.jpg" alt="Iphone 12" class="card__image">
+              <img src="/public/img/beats-studio-3-gold.webp" alt="Ipad" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Celular</h2>
+              <h2 class="card__heading">Beats Studio 3 - Gold</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>Incluye estuche dorado Beats Studio original y cargador wirless</p>
               </div>
             </div>
           </article>
@@ -96,14 +98,12 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/auriculares-sony.jpg" alt="Auriculares Sony" class="card__image">
+              <img src="/public/img/beats-studio-3-white.webp" alt="Macbook" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Auriculares Sony</h2>
+              <h2 class="card__heading">Beats Studio 3 - White</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>Incluye estuche Beats Studio original (color a elección) y cargador wirless</p>
               </div>
             </div>
           </article>
@@ -112,14 +112,13 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/camara-canon.jpg" alt="Camara Canon" class="card__image">
+              <img src="/public/img/bose-soundlink-mini.webp" alt="Cable" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Camara Canon</h2>
+              <h2 class="card__heading">Bose Soundlink</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>El altavoz Bose Soundlink utiliza el sistema True Stereophonic, un auténtico sonido de 360° que te
+                  permitirá experimentar desde cualquier punto la música como a ti te gusta.</p>
               </div>
             </div>
           </article>
@@ -128,14 +127,13 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/drone-dji.jpg" alt="Drone DJI" class="card__image">
+              <img src="public/img/bose-soundlink.webp" alt="Apple watch" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Drone</h2>
+              <h2 class="card__heading">Bose Soundlink Mini</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>El altavoz Bose Soundlink Mini está diseñado para ir contigo a todas partes y envolverte en un sonido
+                  potente y supernítido.</p>
               </div>
             </div>
           </article>
@@ -144,14 +142,13 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/lavarropas-dh.jpg" alt="Lavarropas" class="card__image">
+              <img src="/public/img/applewatch-se.webp" alt="Iphone 13" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Celular</h2>
+              <h2 class="card__heading">Apple Watch SE</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>Una gran pantalla Retina para que tengas más información de un solo vistazo. Sensores avanzados que
+                  registran todas tus formas de moverte.</p>
               </div>
             </div>
           </article>
@@ -160,14 +157,12 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/modem-motorola.jpg" alt="Modem Motorola" class="card__image">
+              <img src="/public/img/ipad-1.webp" alt="Iphone 13 Pro" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Modem</h2>
+              <h2 class="card__heading">Ipad Pro 10 | 11 | 12 Gen</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>Incluye cargador cable USB C y vidrio templado Gorila Glass de regalo</p>
               </div>
             </div>
           </article>
@@ -176,14 +171,12 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/dji-mavic-2-pro.jpg" alt="Drone Mavic" class="card__image">
+              <img src="/public/img/iphone-13.webp" alt="Iphone 14 Pro" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Drone</h2>
+              <h2 class="card__heading">Iphone 13 | 13 Pro | 13 Pro Max</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>Incluye cargador cable USB C y vidrio templado Gorila Glass de regalo</p>
               </div>
             </div>
           </article>
@@ -192,14 +185,12 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/samsung-tu7000.jpg" alt="Televisor" class="card__image">
+              <img src="/public/img/iphone-14-pro.webp" alt="Funda wirless" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Televisor</h2>
+              <h2 class="card__heading">Iphone 14 | 14 Pro | 14 Pro Max</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>Incluye cargador cable USB C y vidrio templado Gorila Glass de regalo</p>
               </div>
             </div>
           </article>
@@ -208,14 +199,12 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/notebook-lenovo.jpg" alt="Notebook" class="card__image">
+              <img src="/public/img/galaxy-fold-3.webp" alt="Funda ecocuero" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Notebook</h2>
+              <h2 class="card__heading">Samsung Galaxy Fold 3</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>Incluye cargador cable USB C</p>
               </div>
             </div>
           </article>
@@ -224,14 +213,12 @@
         <a href="#" class="card"> <!-- card -->
           <article class="card__article">
             <div class="card__image-container">
-              <img src="img/chromecast-google.jpg" alt="Chromecast" class="card__image">
+              <img src="/public/img/galaxy-z-flip-5.webp" alt="Funda wallet" class="card__image">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Chromecast</h2>
+              <h2 class="card__heading">Samsung Galaxy Z Flip 5</h2>
               <div class="card__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati numquam saepe itaque neque
-                  cupiditate animi debitis delectus amet ratione expedita at voluptates, sapiente quaerat a qui, maxime
-                  accusamus quia?</p>
+                <p>Incluye cargador cable USB C</p>
               </div>
             </div>
           </article>
@@ -243,10 +230,45 @@
     </section> <!-- section-cards -->
   </main>
 
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo-container">
+        <h3>Excellence Import</h3><i class="fa-solid fa-truck-fast fa-2xl"></i>
+      </div>
+      <div class="footer__column">
+        <h3>Acerca de Excellence Import</h3>
+        <ul>
+          <li>Sobre Nosotros</li>
+          <li>¿Quienes Somos?</li>
+          <li>¿Cuanto demora la entrega?</li>
+          <li>Quienes nos eligen</li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3>Contactenos</h3>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Dirección</li>
+          <li><i class="fa-solid fa-phone"></i> Telefono</li>
+          <li><i class="fa-regular fa-clock"></i> Nuestro Horarios</li>
+          <li><i class="fa-solid fa-users"></i> Atención al Público</li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3>Nuestras Redes</h3>
+        <ul>
+          <li><i class="fa-brands fa-twitter fa-xl"></i> /twitter</li>
+          <li><i class="fa-brands fa-instagram fa-xl"></i> /instagram</li>
+          <li><i class="fa-brands fa-tiktok fa-xl"></i> /tiktok</li>
+          <li><i class="fa-brands fa-discord fa-xl"></i> /discord</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
   <script type="module" src="/main.js"></script>
 </body>
 
 
-<!-- 1:25 -->
+<!--2:00 -->
 
 </html>

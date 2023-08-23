@@ -11,4 +11,11 @@ npm install
 
 ```sh
 npm run dev
+```
 
+## "Buildear" Proyecto
+
+```sh
+npm run build
+
+```
